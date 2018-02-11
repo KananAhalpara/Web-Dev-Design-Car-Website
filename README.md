@@ -2,7 +2,7 @@
 Web Development design assignment, to showcase ux/ui and web design,color and typographic skills using given logo.
 
 <br><br>
-
+Your site is ready to be published at https://kananahalpara.github.io/Web-Dev-Design-Car-Website/.
 <br><br>
 ASSIGNMENT : AS FOLLOWS :
 <br>
