@@ -1,0 +1,106 @@
+
+/* ---------------------------------- clearfix-hack ------------------------------------------ */
+.clearfix:after,
+.row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix,
+* html .row             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix,
+*:first-child+html .row { zoom: 1; } /* IE7 */
+
+
+/* ---------------------------------- column ------------------------------------------ */
+.col {
+	float: left;
+	margin:1em 1%;
+	padding: 2%;
+} 
+
+
+/* ---------------------------------- column-width ------------------------------------------ */
+
+.col-12 { width: 94%; }
+.col-11 { width: 85.5%; }
+.col-10 { width: 77.33%; }
+.col-9 { width: 69%; }
+.col-8 { width: 60.5%; }
+.col-7 { width: 52.47%; }
+.col-6 { width: 44%; }
+.col-5 { width: 35.5%; }
+.col-4 { width: 27.33%; }
+.col-3 { width: 19%; }
+.col-2 { width: 10.5%; }
+.col-1 { width: 2.33%; }
+
+
+/* ---------------------------------- images/videos/objects scaling and responsiveness ------------------------------------------ */
+img.scale, 
+iframe.scale, 
+object.scale {
+	height: auto;
+	max-width: 100%;
+}
+
+
+/* ---------------------------------- media-query ------------------------------------------ */
+
+/* Portrait phones and down */
+@media only screen and (max-width: 30em) { 
+	.col { 
+		margin-left: 0;
+	}
+
+	.col-12, 
+	.col-11,
+	.col-10,
+	.col-9,
+	.col-8,
+	.col-7,
+	.col-6,
+	.col-5,
+	.col-4,
+	.col-3,
+	.col-2,
+	.col-1 {
+		width: 95%; 
+	}
+	
+	.wrapper {
+		width: 100%;  
+		margin: 0 auto;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media only screen and (min-width: 30em) { 
+	.wrapper {
+		width: 30em;
+	}
+}
+
+/* Portrait tablet to landscape narrow desktop */
+@media only screen and (min-width: 48em) { 
+	.wrapper {
+		width: 48em;
+	}
+}
+
+/* Standard Desktop */ 
+@media only screen and (min-width: 60em) {
+	.wrapper {
+		width: 60em;
+	}
+}
+
+/* Widescreen Desktop */
+@media only screen and (min-width: 72.5em) { 
+	.wrapper {
+		width: 72.5em;
+	}
+}

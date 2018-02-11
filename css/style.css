@@ -1,0 +1,359 @@
+/* ---------------------------------- basic ------------------------------------------ */
+body{
+	font-family: 'Muli', sans-serif;
+	background-color: #f7f7f7;
+	color: #3c393a
+}
+
+.wrapper{
+   width: 90%;
+   margin: 4em auto;
+   line-height: 1.8em;
+   text-align: justify;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2em;
+	letter-spacing: 4px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+p{
+	font-family: 'Muli', sans-serif;
+	font-size: 1.1em;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+/* ---------------------------------- header ------------------------------------------ */
+header{
+	background-image: url("../images/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	box-shadow: 0px 0px 60px #e7e7e7;
+}
+
+.header-contact{
+	width: 100%;
+	background-color: #e7e7e7;
+	position:fixed;
+	top: 0;
+	z-index: 99999;
+}
+
+.header-contact p{
+	letter-spacing: 2px;
+	font-size: 1.1em;
+	float: right;
+	text-align: left;
+	margin:0.5em 2em;
+	color: #3c393a;
+}
+
+/* ---------------------------------- navigation menu ------------------------------------------ */
+nav{
+	background-color: #3c393a;
+	color: #fff;
+	float: right;
+	width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c393a;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    font-size: 1.1em;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+/* ---------------------------------- hamburger-sidebar-w3school reference ------------------------------------------ */
+.sidenav {
+	display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3c393a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #111;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+	display: none;
+    transition: margin-left .5s;
+    padding: 16px;
+    font-size:1.3em;
+    cursor:pointer;
+    background-color: #3c393a;
+    color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 1em;}
+}
+
+
+
+/* ---------------------------------- services ------------------------------------------ */
+.service img{
+	width: auto;
+	height: 150px;
+	display: inline-block;
+}
+
+/* ---------------------------------- clients ------------------------------------------ */
+.clients{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 60px #d7d7d7;
+}
+
+.clients h2{
+	color: #f6906a;
+}
+
+/* ---------------------------------- parallax ------------------------------------------ */
+.parallax {
+    /* The image used */
+    background-image: url('../images/speedometer.jpg');
+
+    /* Full height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax h1, .parallax p {
+	color: #fff;
+}
+
+/* ---------------------------------- auto-counter ------------------------------------------ */
+.counter-value{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2em;
+	letter-spacing: 4px;
+	font-weight: lighter;
+	text-align: center;
+	
+}
+
+.counter-div{
+	background-color: #fff;
+	box-shadow: 0px 0px 60px #e7e7e7;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+/* ---------------------------------- contact ------------------------------------------ */
+.contact{
+	background-color: #3c393a;
+	width: 100%;
+	color: #fff;
+}
+
+/* ---------------------------------- footer ------------------------------------------ */
+footer{
+	background-color: #fff;
+	padding:1em 0;
+}
+
+footer p{
+	text-align: center;
+	letter-spacing: 2em;
+	font-size: 1em;
+	color: #f6906a;
+}
+
+/* ---------------------------------- media-query ------------------------------------------ */
+/* Portrait phones and down */
+@media only screen and (max-width: 30em) { 
+	h1,h2,h3,h4,h5,h6{
+		font-size: 1em;
+	}
+	p{
+		font-size: 0.8em;
+	}
+
+	.sidenav {
+	display: block;
+	}
+
+	#main{
+		display: block;
+	}
+
+	nav{
+		display: none;
+	}
+	nav li a {
+		font-size: 0.8em;
+	}
+
+	.service img{
+	width: auto;
+	height: 100px;
+	}
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media only screen and (min-width: 30em) { 
+	h1,h2,h3,h4,h5,h6{
+		font-size: 1.2em;
+	}
+	p{
+		font-size: 1em;
+	}
+
+	.sidenav {
+	display: block;
+	}
+
+	#main{
+		display: block;
+	}
+
+	nav{
+		display: none;
+	}
+	nav li a {
+		font-size: 1em;
+	}
+
+	.service img{
+	width: auto;
+	height: 100px;
+	}
+}
+
+/* Portrait tablet to landscape narrow desktop */
+@media only screen and (min-width: 48em) { 
+
+	.sidenav {
+	display: none;
+	}
+
+	#main{
+		display: none;
+	}
+
+	nav{
+		display: block;
+	}
+	.service img{
+	width: auto;
+	height: 100px;
+	}
+
+}
+
+/* Standard Desktop */ 
+@media only screen and (min-width: 60em) {
+	.sidenav {
+	display: none;
+	}
+
+	#main{
+		display: none;
+	}
+
+	nav{
+		display: block;
+	}
+}
+
+/* Widescreen Desktop */
+@media only screen and (min-width: 72.5em) { 
+	
+	h1,h2,h3,h4,h5,h6{
+		font-size: 2em;
+	}
+	p{
+		font-size: 1.2em;
+	}
+
+	.sidenav {
+	display: none;
+	}
+
+	#main{
+		display: none;
+	}
+
+	nav{
+		display: block;
+	}
+	nav li a {
+		font-size: 1.1em;
+	}
+
+	.service img{
+	width: auto;
+	height: 150px;
+	padding-left: 50px;
+	}
+
+}
+
+/* ----------------------------------------------------------- END ---------------------------------------------------------------------- */
